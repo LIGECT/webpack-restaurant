@@ -1,0 +1,28 @@
+# Зависимости
+/node_modules
+
+# Сборки
+/build
+/dist
+
+# Логи
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.stylelintcache
+
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
