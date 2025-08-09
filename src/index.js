@@ -2,16 +2,16 @@ import "./style.css";
 import Background from "./Photoroom.png";
 
 function component() {
-  const element = document.createElement("div");
-  element.textContent = ["My", "restaurant"].join(" ");
-  element.classList.add("hello");
+  const content = document.getElementById("content");
 
+  const heading = document.createElement("h1");
+  heading.textContent = "Welcome to  Lumino";
   const mainBackground = new Image();
-  mainBackground.src = Background;
-
-  element.appendChild(mainBackground);
-
-  return element;
+  mainBackground.classList.add("main-background");
+  // mainBackground.src = Background;
+  content.appendChild(mainBackground);
+  content.appendChild(heading);
+  return content;
 }
 
 document.body.appendChild(component());
