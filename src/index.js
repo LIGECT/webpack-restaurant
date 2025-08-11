@@ -1,4 +1,3 @@
-import "./style.css";
-import Face from "./face";
+import Face from "./pages/first-page/face";
 
 document.body.appendChild(Face());
