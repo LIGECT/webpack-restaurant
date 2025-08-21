@@ -1,7 +1,7 @@
 import "./face-style.css";
 
 export default function component() {
-  const content = document.getElementById("content");
+  const fragment = document.createDocumentFragment();
 
   const heading = document.createElement("h1");
   const subheading = document.createElement("h2");
@@ -14,6 +14,6 @@ export default function component() {
   bodyText.textContent =
     "At Lumino, dining is not just a meal — it’s an experience. Our chefs create each dish with passion, precision, and respect for the ingredients. From the first bite to the last sip, we aim to immerse you in a journey of flavors that linger in memory.";
 
-  content.append(heading, subheading, bodyText);
-  return content;
+  fragment.append(heading, subheading, bodyText);
+  return fragment;
 }

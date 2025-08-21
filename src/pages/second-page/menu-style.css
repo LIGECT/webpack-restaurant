@@ -1,0 +1,18 @@
+body.page-menu {
+  background: url("./assets/background-second-page.webp") no-repeat center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+body.page-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
