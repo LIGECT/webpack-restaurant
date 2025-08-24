@@ -1,6 +1,7 @@
 import "./menu-style.css";
 import createAppetizers from "./menu-modules/foods/appetizers";
 import createMainCourses from "./menu-modules/foods/main-courses";
+import createDesserts from "./menu-modules/foods/desserts";
 
 export default function createMenuPage() {
   const fragment = document.createDocumentFragment();
@@ -18,7 +19,7 @@ export default function createMenuPage() {
   headingFood.textContent = "FOOD";
 
   sectionFood.appendChild(headingFood);
-  sectionFood.append(createAppetizers(), createMainCourses());
+  sectionFood.append(createAppetizers(), createMainCourses(), createDesserts());
 
   // DRINK
   const sectionDrink = document.createElement("div");

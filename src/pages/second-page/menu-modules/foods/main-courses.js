@@ -14,8 +14,8 @@ export default function createMainCourses() {
 
   const tagliatelle = createMenuItem(
     Tagliatelle,
-    "Tagliatelle al Tartufo ",
-    "Tagliatelle al Tartufo ",
+    "Tagliatelle al Tartufo",
+    "Tagliatelle al Tartufo",
     "Handmade pasta in creamy truffle sauce.",
     "$24"
   );
