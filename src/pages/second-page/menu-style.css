@@ -1,7 +1,18 @@
 body.page-menu {
   background: url("./assets/background-second-page.webp") no-repeat center;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
+  /* height: 100vh; */
+  overflow-y: auto;
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  box-sizing: border-box;
 }
 
 body.page-menu::before {
@@ -17,13 +28,20 @@ body.page-menu::before {
   opacity: 0;
 }
 
+#content > h1 {
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
 .menu-wrapper {
+  overflow-y: auto;
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   gap: 2rem;
   padding: 2rem;
   background: white;
   border-radius: 12px;
-  margin: auto;
 }
 
 .menu-section {
