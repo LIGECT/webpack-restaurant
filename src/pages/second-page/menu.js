@@ -15,7 +15,6 @@ export default function createMenuPage() {
   const menu = document.createElement("div");
   menu.classList.add("menu-wrapper");
 
-  //FOOD
   const sectionFood = document.createElement("div");
   sectionFood.classList.add("menu-section", "food");
   const headingFood = document.createElement("h2");
@@ -24,7 +23,6 @@ export default function createMenuPage() {
   sectionFood.appendChild(headingFood);
   sectionFood.append(createAppetizers(), createMainCourses(), createDesserts());
 
-  // DRINK
   const sectionDrink = document.createElement("div");
   sectionDrink.classList.add("menu-section", "drink");
   const headingDrink = document.createElement("h2");

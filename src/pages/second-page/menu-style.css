@@ -11,8 +11,10 @@ body.page-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  /* 1. Уменьшаем отступ сверху, чтобы меню было ближе к верху экрана */
+  padding: 1rem 0;
   box-sizing: border-box;
+  margin-top: 3%;
 }
 
 body.page-menu::before {
@@ -37,6 +39,8 @@ body.page-menu::before {
   overflow-y: auto;
   width: 90%;
   max-width: 1200px;
+  /* Центрируем колонки, если они не занимают всю ширину */
+  justify-content: center;
   display: flex;
   gap: 2rem;
   padding: 2rem;
@@ -46,12 +50,35 @@ body.page-menu::before {
 
 .menu-section {
   flex: 1;
+  /* Ограничиваем максимальную ширину колонок, чтобы текст не растягивался */
+  max-width: 500px;
 }
 
 .menu-section h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  /* 2. Делаем заголовки секций большими, центрированными и добавляем отступ */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* 3. Добавляем стили для подсекций, чтобы визуально их разделить */
+.subsection {
+  margin-bottom: 2.5rem;
+}
+
+.subsection:last-of-type {
+  margin-bottom: 0;
+}
+
+.subsection > h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
 }
 
 .menu-item {
@@ -69,8 +96,10 @@ body.page-menu::before {
 }
 
 .item-info h4 {
-  margin: 0;
+  /* 4. Настраиваем названия блюд, чтобы они отличались от заголовков подсекций */
+  margin: 0 0 0.25rem 0;
   font-weight: bold;
+  font-size: 1.05rem;
 }
 
 .item-info p {
