@@ -16,3 +16,51 @@ body.page-menu::before {
   animation: fadeIn 2s ease-in-out forwards;
   opacity: 0;
 }
+
+.menu-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  margin: auto;
+}
+
+.menu-section {
+  flex: 1;
+}
+
+.menu-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.menu-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-info h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-info p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.item-info .price {
+  font-weight: bold;
+  color: #d4a000;
+}

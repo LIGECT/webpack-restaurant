@@ -46,4 +46,5 @@ menuButton.addEventListener("click", () => loadPage(Menu, "page-menu"));
 // homeButton.addEventListener("click", () => loadPage(About));
 
 // contentDiv.appendChild(Face());
-loadPage(Face, "page-home", false);
+// loadPage(Face, "page-home", false);
+loadPage(Menu, "page-menu", false);

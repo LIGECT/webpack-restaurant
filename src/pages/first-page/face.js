@@ -1,6 +1,6 @@
 import "./face-style.css";
 
-export default function component() {
+export default function createFacePage() {
   const fragment = document.createDocumentFragment();
 
   const heading = document.createElement("h1");
