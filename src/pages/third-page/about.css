@@ -1,0 +1,32 @@
+body.page-about #content {
+  margin-top: 0;
+  padding: 0;
+}
+
+body.page-about nav {
+  position: absolute;
+  /* top: -3%; */
+  left: 28%;
+  z-index: 2;
+  color: white;
+}
+
+.about-header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.75) 12%,
+      transparent 40%
+    ),
+    url("./assets/backgroundAbout.webp");
+
+  background-size: cover;
+  background-position: 73% 27%;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  /* padding-top: 10%; */
+}
