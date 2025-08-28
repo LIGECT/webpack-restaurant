@@ -1,5 +1,5 @@
 export default function createMenuItem(
-  imageSrc,
+  imageInfo,
   imageAlt,
   name,
   description,
@@ -9,8 +9,13 @@ export default function createMenuItem(
   menuItem.classList.add("menu-item");
 
   const img = document.createElement("img");
-  img.src = imageSrc;
+  img.src = imageInfo.src;
+  img.srcset = imageInfo.srcSet;
+
+  img.sizes = "80px";
+
   img.alt = imageAlt;
+  img.loading = "lazy";
 
   const itemInfo = document.createElement("div");
   itemInfo.classList.add("item-info");

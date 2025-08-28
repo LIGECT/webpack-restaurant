@@ -1,7 +1,7 @@
 import createMenuItem from "../../../../utils/createMenuItem";
-import Chianti from "../../assets/menu-pictures/drinks/alcoholic/Chianti-Classico-DOCG.png";
-import Prosecco from "../../assets/menu-pictures/drinks/alcoholic/Prosecco-di-Valdobbiadene.png";
-import Negroni from "../../assets/menu-pictures/drinks/alcoholic/Negroni.png";
+import Chianti from "../../assets/menu-pictures/drinks/alcoholic/Chianti-Classico-DOCG.webp";
+import Prosecco from "../../assets/menu-pictures/drinks/alcoholic/Prosecco-di-Valdobbiadene.webp";
+import Negroni from "../../assets/menu-pictures/drinks/alcoholic/Negroni.webp";
 
 export default function createAlcoholic() {
   const subsection = document.createElement("div");

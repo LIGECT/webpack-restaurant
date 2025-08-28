@@ -1,7 +1,7 @@
 import createMenuItem from "../../../../utils/createMenuItem";
-import Tiramisu from "../../assets/menu-pictures/foods/desserts/Tiramisù-Classico.png";
-import PannaCota from "../../assets/menu-pictures/foods/desserts/Panna-Cotta-alla-Vaniglia.png";
-import Cannoli from "../../assets/menu-pictures/foods/desserts/Cannoli-Siciliani.png";
+import Tiramisu from "../../assets/menu-pictures/foods/desserts/Tiramisù-Classico.webp";
+import PannaCota from "../../assets/menu-pictures/foods/desserts/Panna-Cotta-alla-Vaniglia.webp";
+import Cannoli from "../../assets/menu-pictures/foods/desserts/Cannoli-Siciliani.webp";
 
 export default function createDesserts() {
   const subsection = document.createElement("div");

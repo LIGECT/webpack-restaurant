@@ -1,6 +1,6 @@
-import Bruschetta from "../../assets/menu-pictures/foods/appetizers/Bruschetta-al-Pomodoro.png";
-import Carpaccio from "../../assets/menu-pictures/foods/appetizers/Carpaccio-di-Manzo.png";
-import Calamari from "../../assets/menu-pictures/foods/appetizers/Calamari-Fritti.png";
+import Bruschetta from "../../assets/menu-pictures/foods/appetizers/Bruschetta-al-Pomodoro.webp";
+import Carpaccio from "../../assets/menu-pictures/foods/appetizers/Carpaccio-di-Manzo.webp";
+import Calamari from "../../assets/menu-pictures/foods/appetizers/Calamari-Fritti.webp";
 import createMenuItem from "../../../../utils/createMenuItem";
 
 export default function createAppetizers() {

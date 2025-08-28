@@ -1,7 +1,7 @@
 import createMenuItem from "../../../../utils/createMenuItem";
-import Pellegrino from "../../assets/menu-pictures/drinks/non-alcoholic/San-Pellegrino-Limonata.png";
-import Acqua from "../../assets/menu-pictures/drinks/non-alcoholic/Acqua-Panna.png";
-import Juice from "../../assets/menu-pictures/drinks/non-alcoholic/Fresh-Blood-Orange-Juice.png";
+import Pellegrino from "../../assets/menu-pictures/drinks/non-alcoholic/San-Pellegrino-Limonata.webp";
+import Acqua from "../../assets/menu-pictures/drinks/non-alcoholic/Acqua-Panna.webp";
+import Juice from "../../assets/menu-pictures/drinks/non-alcoholic/Fresh-Blood-Orange-Juice.webp";
 
 export default function createNonAlcoholic() {
   const subsection = document.createElement("div");

@@ -1,7 +1,7 @@
 import createMenuItem from "../../../../utils/createMenuItem";
-import Tagliatelle from "../../assets/menu-pictures/foods/main-courses/Tagliatelle-al-Tartufo.png";
-import Risotto from "../../assets/menu-pictures/foods/main-courses/Risotto-ai-Frutti-di-Mare.png";
-import Bistecca from "../../assets/menu-pictures/foods/main-courses/Tagliatelle-al-Tartufo.png";
+import Tagliatelle from "../../assets/menu-pictures/foods/main-courses/Tagliatelle-al-Tartufo.webp";
+import Risotto from "../../assets/menu-pictures/foods/main-courses/Risotto-ai-Frutti-di-Mare.webp";
+import Bistecca from "../../assets/menu-pictures/foods/main-courses/Bistecca-alla-Fiorentina.webp";
 
 export default function createMainCourses() {
   const subsection = document.createElement("div");

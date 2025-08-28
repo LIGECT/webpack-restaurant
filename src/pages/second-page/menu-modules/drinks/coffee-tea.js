@@ -1,7 +1,7 @@
 import createMenuItem from "../../../../utils/createMenuItem";
-import Espresso from "../../assets/menu-pictures/drinks/coffee-&-tea/Espresso.png";
-import Cappuccino from "../../assets/menu-pictures/drinks/coffee-&-tea/Cappuccino.png";
-import Tea from "../../assets/menu-pictures/drinks/coffee-&-tea/Chamomile-Tea.png";
+import Espresso from "../../assets/menu-pictures/drinks/coffee-&-tea/Espresso.webp";
+import Cappuccino from "../../assets/menu-pictures/drinks/coffee-&-tea/Cappuccino.webp";
+import Tea from "../../assets/menu-pictures/drinks/coffee-&-tea/Chamomile-Tea.webp";
 
 export default function createCoffeeTea() {
   const subsection = document.createElement("div");
