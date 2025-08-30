@@ -1,3 +1,7 @@
+body.page-about {
+  overflow: auto;
+}
+
 body.page-about #content {
   margin-top: 0;
   padding: 0;
