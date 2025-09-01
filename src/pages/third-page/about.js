@@ -1,5 +1,6 @@
 import "./about.css";
 import createHistorySection from "./about-us-modules/createHistorySection";
+import createValuesSection from "./about-us-modules/createValuesSection";
 
 export default function createAboutPage() {
   const fragment = document.createDocumentFragment();
@@ -15,7 +16,8 @@ export default function createAboutPage() {
 
   heroSection.append(heading, subtitle);
   const historySection = createHistorySection();
+  const valuesSection = createValuesSection();
 
-  fragment.append(heroSection, historySection);
+  fragment.append(heroSection, historySection, valuesSection);
   return fragment;
 }
