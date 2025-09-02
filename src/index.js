@@ -2,6 +2,7 @@ import "./style.css";
 import Face from "./pages/first-page/face";
 import Menu from "./pages/second-page/menu";
 import About from "./pages/third-page/about";
+import createBurgerMenu from "./utils/burgerMenu";
 
 const contentDiv = document.getElementById("content");
 
@@ -49,3 +50,5 @@ aboutButton.addEventListener("click", () => loadPage(About, "page-about"));
 // loadPage(Face, "page-home", false);
 // loadPage(Menu, "page-menu", false);
 loadPage(About, "page-about", false);
+
+createBurgerMenu();
