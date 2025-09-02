@@ -6,6 +6,8 @@ export default function createIconsItem(iconInfo, iconAlt, title, text) {
   img.classList.add("value-icon");
   img.src = iconInfo;
   img.alt = iconAlt;
+  img.width = 64;
+  img.height = 64;
   img.loading = "lazy";
 
   const cardTitle = document.createElement("h3");

@@ -9,6 +9,10 @@ export default function createHistorySection() {
   imgChief.src = ChiefImage;
   imgChief.alt =
     "A confident Italian man in his 40s in a white uniform with golden embroidery.";
+
+  imgChief.width = 250;
+  imgChief.height = 380;
+  imgChief.loading = "lazy";
   imgChief.classList.add("our-history__image");
   imgChief.classList.add("our-history__image--1");
 
@@ -41,6 +45,9 @@ export default function createHistorySection() {
   const imgInspiration = document.createElement("img");
   imgInspiration.src = Inspiration;
   imgInspiration.alt = "Restaurant interior with a table.";
+  imgInspiration.width = 300;
+  imgInspiration.height = 400;
+  imgInspiration.loading = "lazy";
   imgInspiration.classList.add("our-history__image");
   imgInspiration.classList.add("our-history__image--2");
 

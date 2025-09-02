@@ -9,11 +9,10 @@ export default function createMenuItem(
   menuItem.classList.add("menu-item");
 
   const img = document.createElement("img");
-  // img.src = imageInfo.src;
-  // img.srcset = imageInfo.srcSet;
   img.src = imageInfo;
-
   img.sizes = "80px";
+  img.width = 80;
+  img.height = 80;
 
   img.alt = imageAlt;
   img.loading = "lazy";

@@ -46,9 +46,8 @@ homeButton.addEventListener("click", () => loadPage(Face, "page-home"));
 menuButton.addEventListener("click", () => loadPage(Menu, "page-menu"));
 aboutButton.addEventListener("click", () => loadPage(About, "page-about"));
 
-// contentDiv.appendChild(Face());
-// loadPage(Face, "page-home", false);
+loadPage(Face, "page-home", false);
 // loadPage(Menu, "page-menu", false);
-loadPage(About, "page-about", false);
+// loadPage(About, "page-about", false);
 
 createBurgerMenu();
