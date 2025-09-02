@@ -40,8 +40,7 @@ export default function createHistorySection() {
 
   const imgInspiration = document.createElement("img");
   imgInspiration.src = Inspiration;
-  imgInspiration.alt =
-    "Restaurant interior with a table set with flowers and candles, against a window showing the city lights. The walls are white with gold accents.";
+  imgInspiration.alt = "Restaurant interior with a table.";
   imgInspiration.classList.add("our-history__image");
   imgInspiration.classList.add("our-history__image--2");
 

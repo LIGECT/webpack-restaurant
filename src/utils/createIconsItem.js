@@ -8,7 +8,7 @@ export default function createIconsItem(iconInfo, iconAlt, title, text) {
   img.alt = iconAlt;
   img.loading = "lazy";
 
-  const cardTitle = document.createElement("h4");
+  const cardTitle = document.createElement("h3");
   cardTitle.textContent = title;
 
   const cardText = document.createElement("p");

@@ -17,28 +17,28 @@ export default function createValuesSection() {
 
   const chef = createIconsItem(
     Chef,
-    "Mastery",
+    "",
     "Maestria",
     "Our chefs cook as if every dish is a premiere on stage"
   );
 
   const wine = createIconsItem(
     Wine,
-    "Elegance",
+    "",
     "Eleganza",
     "We believe a glass of wine and the right presentation make an evening perfect"
   );
 
   const fork = createIconsItem(
     Fork,
-    "Tradition",
+    "",
     "Tradizione",
     "Classic Italian recipes are our foundation, to which we add a modern touch"
   );
 
   const flame = createIconsItem(
     Flame,
-    "Passion",
+    "",
     "Passione",
     "Every dish is created with love, energy, and attention to detail"
   );
