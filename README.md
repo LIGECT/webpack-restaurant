@@ -1,6 +1,6 @@
 # Lumino Restaurant Page
 
-![Project Screenshot](./src/assets/screenshots.jpg)
+![Project Screenshot](./src/assets/screenshot.jpg)
 
 A simple, elegant, and responsive website for a fictional Italian restaurant named "Lumino". This project was built from scratch to practice webpack, asset management, and dynamic page generation with JavaScript.
 
