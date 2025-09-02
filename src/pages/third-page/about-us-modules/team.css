@@ -64,3 +64,22 @@
   line-height: 1.6;
   max-width: 220px;
 }
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .team h2 {
+    text-align: center;
+  }
+  .team h2::after {
+    margin: 0.8rem auto 0 auto;
+  }
+}

@@ -106,3 +106,32 @@ body.page-menu::before {
   font-weight: bold;
   color: #d4a000;
 }
+
+@media (max-width: 768px) {
+  .menu-wrapper {
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    gap: 3rem;
+  }
+
+  #content {
+    padding: 1rem 0.5rem;
+    margin-top: 5%;
+  }
+
+  .menu-section h2 {
+    font-size: 2rem;
+  }
+
+  .subsection > h4 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -63,9 +63,6 @@ body.page-about nav {
 
 .history-block h2,
 .inspiration-block h2 {
-  /* font-size: 2.2rem;
-  color: #333;
-  margin-bottom: 1.5rem; */
   font-size: 2.6rem;
   color: #1c1c1c;
   margin-bottom: 2rem;
@@ -108,4 +105,43 @@ body.page-about nav {
 .our-history__image {
   border-radius: 20%;
   display: block;
+}
+
+@media (max-width: 1024px) {
+  .our-history {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 5% 2rem;
+    justify-items: center;
+  }
+
+  .our-history__image--1,
+  .our-history__image--2 {
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 400px;
+  }
+
+  .history-block,
+  .inspiration-block {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+  }
+
+  .history-block h2::after,
+  .inspiration-block h2::after {
+    margin: 0.8rem auto 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-header {
+    height: 30vh;
+  }
+
+  .history-block h2,
+  .inspiration-block h2 {
+    font-size: 2.2rem;
+  }
 }
