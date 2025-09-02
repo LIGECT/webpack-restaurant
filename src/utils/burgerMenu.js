@@ -1,3 +1,5 @@
+import { loadPage, pages } from "./pageLoader";
+
 export default function createBurgerMenu() {
   const burger = document.createElement("div");
   burger.classList.add("burger");
@@ -17,12 +19,15 @@ export default function createBurgerMenu() {
   if (nav) {
     nav.querySelectorAll("button").forEach((btn) => {
       const clone = btn.cloneNode(true);
-      clone.addEventListener("click", () => {
-        navWrapper.classList.remove("open");
-        burger.classList.remove("open");
-        overlay.classList.remove("open");
-        btn.click();
-      });
+      const pageInfo = pages[btn.id];
+      if (pageInfo) {
+        clone.addEventListener("click", () => {
+          navWrapper.classList.remove("open");
+          burger.classList.remove("open");
+          overlay.classList.remove("open");
+          loadPage(pageInfo.component, pageInfo.class);
+        });
+      }
       navWrapper.appendChild(clone);
     });
   }

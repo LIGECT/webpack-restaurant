@@ -1,51 +1,21 @@
 import "./style.css";
-import Face from "./pages/first-page/face";
-import Menu from "./pages/second-page/menu";
-import About from "./pages/third-page/about";
 import createBurgerMenu from "./utils/burgerMenu";
-
-const contentDiv = document.getElementById("content");
+import { loadPage, pages } from "./utils/pageLoader";
 
 const homeButton = document.getElementById("home-button");
 const menuButton = document.getElementById("menu-button");
 const aboutButton = document.getElementById("about-button");
 
-function clearBody() {
-  contentDiv.innerHTML = "";
-}
+homeButton.addEventListener("click", () =>
+  loadPage(pages["home-button"].component, pages["home-button"].class)
+);
+menuButton.addEventListener("click", () =>
+  loadPage(pages["menu-button"].component, pages["menu-button"].class)
+);
+aboutButton.addEventListener("click", () =>
+  loadPage(pages["about-button"].component, pages["about-button"].class)
+);
 
-function loadPage(pageComponent, pageClass, withTransition = true) {
-  if (
-    document.body.classList.contains(pageClass) ||
-    (withTransition && document.body.classList.contains("is-transitioning"))
-  ) {
-    return;
-  }
-
-  const changePageContent = () => {
-    clearBody();
-    document.body.className = "";
-    document.body.classList.add(pageClass);
-    contentDiv.appendChild(pageComponent());
-  };
-
-  if (withTransition) {
-    document.body.classList.add("is-transitioning");
-    setTimeout(() => {
-      changePageContent();
-      requestAnimationFrame(() => {
-        document.body.classList.remove("is-transitioning");
-      });
-    }, 500);
-  } else {
-    changePageContent();
-  }
-}
-
-homeButton.addEventListener("click", () => loadPage(Face, "page-home"));
-menuButton.addEventListener("click", () => loadPage(Menu, "page-menu"));
-aboutButton.addEventListener("click", () => loadPage(About, "page-about"));
-
-loadPage(Face, "page-home", false);
+loadPage(pages["home-button"].component, pages["home-button"].class, false);
 
 createBurgerMenu();
